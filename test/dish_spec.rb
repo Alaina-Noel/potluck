@@ -7,13 +7,13 @@ RSpec.describe Dish do
   end
 
   it 'has a name' do
-    dish = Dish.new("Pizza", "Italian")
+    dish = Dish.new("Pizza", :Entree)
     expect(dish.name).to eq("Pizza")
   end
 
   it 'has a category' do
-    dish = Dish.new("Pizza", "Italian")
-    expect(dish.category).to eq("Italian")
+    dish = Dish.new("Pizza", :Entree)
+    expect(dish.category).to eq(:Entree)
   end
 
 end
