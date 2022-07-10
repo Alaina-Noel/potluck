@@ -63,13 +63,33 @@ RSpec.describe do
     potluck.add_dish(roast_pork)
     potluck.add_dish(candy_salad)
     potluck.add_dish(icecream)
+    binding.pry
 
     expect(potluck.get_all_from_category(:appetizer)).to eq([couscous_salad])
     expect(potluck.get_all_from_category(:dessert)).to eq([candy_salad, icecream])
     expect(potluck.get_all_from_category(:appetizer).first.name).to eq("Couscous Salad")
-
   end
 
+  # xit 'can retrieve all dishes from a given category' do
+  #   potluck = Potluck.new("7-10-22")
+  #   couscous_salad = Dish.new("Couscous Salad", :appetizer)
+  #   spaghetti = Dish.new("Spaghetti", :entre)
+  #   oatmeal = Dish.new("Oatmeal", :entre)
+  #   roast_pork = Dish.new("Roast Pork", :entre)
+  #   candy_salad = Dish.new("Candy Salad", :dessert)
+  #   icecream = Dish.new("Ice Cream", :dessert)
+  #
+  #   potluck.add_dish(couscous_salad)
+  #   potluck.add_dish(spaghetti)
+  #   potluck.add_dish(oatmeal)
+  #   potluck.add_dish(roast_pork)
+  #   potluck.add_dish(candy_salad)
+  #   potluck.add_dish(icecream)
+  #
+  #   expect(potluck.menu).to eq(menu)
+  #
+  #
+  # end
 
 
 
