@@ -69,7 +69,7 @@ RSpec.describe do
     expect(potluck.get_all_from_category(:appetizer).first.name).to eq("Couscous Salad")
   end
 
-  xit 'can retrieve all dishes from a given category' do
+  it 'can retrieve all dishes from a given category' do
     potluck = Potluck.new("7-10-22")
     couscous_salad = Dish.new("Couscous Salad", :appetizer)
     spaghetti = Dish.new("Spaghetti", :entre)

@@ -9,7 +9,7 @@ class Potluck
 
   def add_dish(dish)
     @dishes << dish
-    @menu = dishes.group_by do |dish|
+    dish_objects = dishes.group_by do |dish|
       dish.category
       #I have the correct key but the values are the objects instead of
       #the object names
