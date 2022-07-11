@@ -84,7 +84,7 @@ RSpec.describe do
     potluck.add_dish(roast_pork)
     potluck.add_dish(candy_salad)
     potluck.add_dish(icecream)
-
+binding.pry
     expect(potluck.menu).to eq(menu)
 
 

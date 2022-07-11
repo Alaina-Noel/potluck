@@ -22,5 +22,13 @@ class Potluck
     end
   end
 
+  def menu
+    #update the menu variable to be a hash where
+    #the key is the type of dish &
+    #the value is an array with the name of each dish
+    #of that type.
+    #outer loop: cycle through all dishes
+    #inner loop:
+
 
 end
