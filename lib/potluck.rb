@@ -23,6 +23,16 @@ class Potluck
   end
 
   def menu
+    menu_hash = {
+      appetizers: [],
+      entres: [],
+      desserts: []
+    }
+
+    @dishes.each do |dish|
+      require "pry"
+      binding.pry
+    end
     #update the menu variable to be a hash where
     #the key is the type of dish &
     #the value is an array with the name of each dish
